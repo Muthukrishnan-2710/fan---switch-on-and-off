@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color:grey;
+}
+ h1{
+    height: 200px;
+    font-weight: bolder;
+    color: rgb(5, 2, 2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    font-style: italic;
+}
+body{
+    height: 110vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img{
+    border: 20px solid aqua;
+    padding: 50px;
+    border-radius: 50%;
+    animation: fananim linear infinite;
+    height: 350px;
+}
+
+button{
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+    padding: 20px 30px;
+    margin: 0 20px;
+    font-size: 25px;
+    font-weight: 550;
+    border: none;
+    background-color: silver;
+    border-radius: 50%;
+    transition: 0.1s;
+}
+
+button:active{
+    box-shadow: 0px 10px 10px black;
+    transform: scale(0.95);
+}
+
+.main button:nth-last-child(5){
+    background-color: rgb(0, 255, 0);
+}
+
+.main button:nth-last-child(4){
+    background-color: red;
+}
+
+@keyframes fananim
+{
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        height: auto;
+    }
+
+    h1 {
+        height: 150px;
+    }
+
+    img {
+        height: 220px; /* Adjust height as needed */
+    }
+
+    button {
+        width: 80px; /* Adjust width as needed */
+        height: 80px; /* Adjust height as needed */
+        font-size: 20px; /* Adjust font size as needed */
+        padding: 15px 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+    }
+}
